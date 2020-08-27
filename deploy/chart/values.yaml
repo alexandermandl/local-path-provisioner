@@ -91,5 +91,5 @@ configmap:
   teardown: |-
     #!/bin/sh
     path=$1
-    rm -rf ${path}
+    rmdir --ignore-fail-on-non-empty ${path}
 
